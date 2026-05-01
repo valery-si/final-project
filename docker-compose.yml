@@ -22,38 +22,6 @@ services:
     volumes:
       - pgadmin_data:/var/lib/pgadmin
 
-  server:
-    build: ./server
-    environment:
-      DATABASE_URL: postgresql+psycopg2://safebrowse:safebrowse@db:5432/safebrowse
-      CLIENT_BASE_URL: http://localhost:5173
-      OPENAI_MODEL: gpt-4o-mini
-      TLDR_NEURAL_MODEL: sshleifer/distilbart-cnn-12-6
-      PRELOAD_ROBERTA: ${PRELOAD_ROBERTA:-true}
-      PRELOAD_TLDR: ${PRELOAD_TLDR:-true}
-      HF_HOME: /root/.cache/huggingface
-      WEIGHT_EMOTIONAL: ${WEIGHT_EMOTIONAL:-0.52}
-      WEIGHT_SOURCE_INVERSE: ${WEIGHT_SOURCE_INVERSE:-0.33}
-      WEIGHT_STRUCTURE: ${WEIGHT_STRUCTURE:-0.15}
-      THRESHOLD_CAUTION: ${THRESHOLD_CAUTION:-0.28}
-      THRESHOLD_NO_GO: ${THRESHOLD_NO_GO:-0.45}
-      THRESHOLD_HARD_NO_GO: ${THRESHOLD_HARD_NO_GO:-0.65}
-    ports:
-      - "8000:8000"
-    depends_on:
-      - db
-    volumes:
-      - hf_cache:/root/.cache/huggingface
-  # client:
-  #   build: ./client
-  #   environment:
-  #     VITE_API_BASE_URL: http://localhost:8000/api
-  #   ports:
-  #     - "5173:5173"
-  #   depends_on:
-  #     - server
-
 volumes:
   pg_data:
   pgadmin_data:
-  hf_cache:
