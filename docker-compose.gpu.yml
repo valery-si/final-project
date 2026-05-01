@@ -1,0 +1,11 @@
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.gpu
+      args:
+        TORCH_CUDA_CHANNEL: ${TORCH_CUDA_CHANNEL:-cu121}
+        TORCH_VERSION: ${TORCH_VERSION:-2.5.1}
+    environment:
+      CUDA_VISIBLE_DEVICES: all
+    gpus: all

@@ -1,0 +1,9 @@
+emotional_intensity,source_transparency,structure_predictability,label
+0.10,0.90,0.15,go
+0.30,0.45,0.35,caution
+0.68,0.22,0.55,no_go
+0.90,0.05,0.80,hard_no_go
+0.12,0.84,0.18,mostly_credible_tone
+0.44,0.34,0.38,mixed_signals
+0.62,0.20,0.42,attention_required
+0.88,0.08,0.73,high_risk

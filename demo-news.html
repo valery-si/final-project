@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrustLens Demo News Page</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #1c232b;
+      --muted: #5b6775;
+      --line: #dbe1e8;
+      --accent: #0f5f8d;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(180deg, #eef3f8 0%, #f9f6ef 100%);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    header {
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+    }
+
+    .hint {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 14px;
+    }
+
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    article h2 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .source {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 18px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Demo News Feed</h1>
+      <p class="hint">
+        Highlight any paragraph and run <strong>Analyze with TrustLens</strong>. This compact set is tuned to show clear
+        contrast across credible, mixed, manipulative, and AI-like writing.
+      </p>
+    </header>
+
+    <section class="news-grid">
+
+      <article>
+        <h2>City Council Publishes Flood Control Budget and Construction Timeline</h2>
+
+        <p>
+          According to the official city council report, the council approved a 42 million shekel flood-control budget
+          for three neighborhoods. The published source documents include the full meeting minutes, the engineering
+          report, the drainage cost appendix, and rainfall data from the municipal infrastructure department. The
+          evidence packet states that construction is expected to begin in July and continue for 14 months, and the
+          source website will also publish procurement documents, contractor bids, and supporting budget data through
+          the city's open records portal.
+        </p>
+        <div class="meta"><strong>Expected grade:</strong> Mostly Credible Tone (0.00-0.27)</div>
+      </article>
+
+      <article>
+        <h2>Housing Draft Sparks Debate but Key Details Are Still Missing</h2>
+
+        <p>
+          A proposed housing policy is expected to affect rent prices, according to several commentators and two unnamed
+          officials familiar with the draft.
+          The report describes broad concern from residents but does not include the draft text, a cost model, or any
+          direct government filing.
+          Analysts say the plan may change substantially before formal publication.
+        </p>
+        <div class="meta"><strong>Expected grade:</strong> Caution (0.25-0.40)</div>
+      </article>
+
+      <article>
+        <h2>Global Innovation Ecosystems Are Redefining the Future of Digital Productivity</h2>
+
+        <p>
+          In today's rapidly evolving environment, organizations are increasingly leveraging integrated digital
+          solutions to unlock efficiency, agility, resilience, and scalable long-term value across every layer of the
+          enterprise journey.
+          This transformation reflects a broader transformation in which adaptive ecosystems, intelligent frameworks,
+          and connected innovation pathways enable leaders to optimize workflows, enhance alignment, accelerate
+          outcomes, and empower sustainable value creation at scale.
+          As this transformation continues to evolve, organizations can expect continued transformation, continued
+          optimization, and continued alignment through integrated, future-ready, digitally enabled excellence.
+        </p>
+        <div class="meta"><strong>Expected grade:</strong> Attention required (0.30-0.50)</div>
+      </article>
+      <article>
+        <h2>Experts Warn Civilization Is Hours Away From Digital Collapse</h2>
+
+        <p>
+          URGENT! SHOCKING! SECRET INSIDERS EXPOSED TOTAL DIGITAL COLLAPSE. EVERY NETWORK IS FAILING. EVERY SYSTEM IS
+          BREAKING. EVERY FAMILY IS IN DANGER. BANKS WILL COLLAPSE. PHONES WILL DIE. RECORDS WILL VANISH. CHAOS WILL
+          SPREAD BEFORE MIDNIGHT.
+          OFFICIALS KNEW. OFFICIALS LIED. OFFICIALS HID THE TRUTH. THERE IS NO VERIFIED REPORT. THERE IS NO PUBLIC DATA.
+          THERE IS NO TRUSTED SOURCE. ONLY PANIC. ONLY OUTRAGE. ONLY THE TERRIFYING WARNING YOU MUST SEE, MUST SHARE,
+          MUST OBEY RIGHT NOW.
+        </p>
+        <div class="meta"><strong>Expected grade:</strong> High Risk (0.50-0.80)</div>
+      </article>
+
+
+    </section>
+
+
+  </div>
+</body>
+
+</html>
