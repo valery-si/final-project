@@ -244,7 +244,7 @@ The current local TL;DR model in `scripts/start-server-local.ps1` is:
 
 For quick testing, open:
 
-- [demo-news.html](</e:/אדריכלות/לימודי full stack/גון ברייס פולסטאק ווב פייתון/מבחנים/תרגיל גמר/final-project/demo-news.html>)
+- [demo-news.html](<demo-news.html>)
 
 It contains example texts designed to produce different signal profiles.
 
